@@ -1,0 +1,1401 @@
+/* Table of Contents
+----------------------------------
+
+0- Global CSS
+1- Heading CSS
+2- Button CSS
+3- Header Area CSS
+4- Home Area CSS
+5- About Area CSS
+6- Deals Area CSS
+7- Menu Area CSS
+8- Gallery Area CSS
+9- Team Area CSS
+10- Testimonials Area CSS
+11- Blog Area CSS
+12- Contact Area CSS 
+13- Booking Area CSS 
+14- Footer Area CSS
+15- Scroll-Top Area CSS
+
+*/
+
+
+
+/*--------------------- 0- Global CSS (Start) ---------------------*/
+@import url('css2.css');
+@import url('css21.css');
+
+:root {
+
+  --yellow: #F7B32B;
+  --black: #0a0903;
+  --white: #fff;
+  --grey: #666;
+  --border-radius: 1rem;
+  --box-shadow: 1px 0px 8px -3px rgba(0, 0, 0, 0.2);
+}
+
+*{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  outline: none;
+  border: none;
+
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.6%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--yellow);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: rgba(247, 179, 43, 0.1)
+}
+
+section {
+  padding: 2rem 5%; 
+}
+
+.swiper-pagination-bullet{
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50rem;
+}
+
+.swiper-pagination-bullet-active{
+  width: 3rem;
+}
+
+/*--------------------- 0- Global CSS (End) ---------------------*/
+
+
+
+/*--------------------- 1- Heading CSS (Start) ---------------------*/
+.heading h2{
+  font-family: 'Dancing Script', cursive;
+  color: var(--black);
+  text-align: center;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.heading span {
+  font-family: 'Dancing Script', cursive;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+/*--------------------- 1- Heading CSS (End) ---------------------*/
+
+
+
+/*--------------------- 2- Button CSS (Start) ---------------------*/
+.btn {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: var(--yellow);
+  background: transparent;
+  border: 0.2rem solid var(--yellow);
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+}
+
+
+/*--------------------- 2- Button CSS (End) ---------------------*/
+
+
+
+
+/*--------------------- 3- Header Area CSS (Start) ---------------------*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+
+  padding: 2rem 5%;
+  background: transparent;
+
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.header.sticky{
+  background: rgb(0 0 0 / 58%);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .logo i{
+  font-size: 2.5rem;
+  color: var(--yellow);
+  padding-right: 1rem;
+}
+
+.header .logo h2{
+  font-family: 'Dancing Script', cursive;
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.header .logo h2 span{
+  font-family: 'Dancing Script', cursive;
+  color: var(--yellow);
+}
+
+.header .navbar a{
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--white);
+  margin: 0 0.5rem;
+}
+
+.header .navbar a:hover,
+.header .navbar a.active{
+  color: var(--yellow);
+}
+
+#menu-btn{
+  font-size: 3rem;
+  color: var(--white);
+  border: 0.2rem solid var(--white);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: none;
+}
+
+#menu-btn:hover{
+  color: var(--yellow);
+  border-color: var(--yellow);
+  cursor: pointer;
+}
+
+.header .booking-btn{
+  display: inline-block;
+  font-size: 2rem;
+  background: transparent;
+  border: 1.5px solid var(--white);
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.header .booking-btn:hover {
+  cursor: pointer;
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+
+/*--------------------- 3- Header Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 4- Home Area CSS (Start) ---------------------*/
+.home{
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px; 
+  min-height: 100vh;
+  position: relative;
+}
+
+.home-slider{
+  position: relative;
+}
+
+.home-slider .swiper-pagination-bullet{
+  height: 1.5rem;
+  width: 1.5rem;
+  background: var(--white);
+}
+
+.home-slider .swiper-pagination-bullet-active{
+  width: 1.5rem;
+  background: var(--yellow);
+}
+
+.home-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-item .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home-item .content .text{
+  text-align: center;
+  width: 70rem;
+}
+
+.home-item .content .text h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.home-item .content .text p {
+  line-height: 1.4;
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--white);
+}
+
+/*--------------------- 4- Home Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 5- About Area CSS (Start) ---------------------*/
+.about{
+  overflow: hidden;
+}
+
+.about .box-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .image{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+      flex: 1 1 40rem;
+  height: 50rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.about .image h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
+  color: var(--black);
+}
+
+.about .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .content{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+      flex: 1 1 40rem;
+  overflow: hidden;
+}
+
+.about .content h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: var(--black);
+  padding-bottom: 1.5rem;
+}
+
+.about .content p{
+  font-size: 1.6rem;
+  color: var(--grey);
+  line-height: 1.6;
+  padding-bottom: 1.5rem;
+}
+
+.about .content .btn {
+  padding-top: 1rem;
+}
+
+.about-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.about-info .info-box{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 15rem;
+  flex: 1 1 15rem;
+  background: radial-gradient(circle, rgb(234, 235, 208) 0%, rgb(233, 224, 206) 35%, rgb(223, 215, 197) 100%);
+  border: 0.2rem solid var(--black);
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: load89234 2s infinite;
+}
+@keyframes load89234 {
+  100% { background-position: -100% 0; }
+}
+.info-box:hover{
+  box-shadow: 3px 3px 3px 3px rgba(47, 48, 48, 0.3);
+}
+
+
+.about-info .info-box i{
+  font-size: 4rem;
+  color: var(--yellow);
+}
+
+.about-info .info-box .count{
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.about-info .info-box h5{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+.info-margin{
+  margin-right: 1rem;
+}
+
+/*--------------------- 5- About Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 6- Deals Area CSS (Start) ---------------------*/
+.deals .box-container{
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/*--------------------- 6- Deals Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 7- Menu Area CSS (Start) ---------------------*/
+.menu .menu-btns{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.menu .menu-btns button{
+  display: inline-block;
+  font-size: 2rem;
+  background: var(--black);
+  border: 1.5px solid transparent;
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.menu .menu-btns button.active,
+.menu .menu-btns button:hover{
+  color: var(--white);
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+
+.menu .menu-gallery{
+  display: none;
+}
+
+.menu .menu-gallery.active{
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.menu-item{
+  width: 95%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.primary-button {
+  font-family: 'Ropa Sans', sans-serif;
+     /* font-family: 'Valorant', sans-serif; */
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0E1822;
+  padding: 0.8rem 2.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #0E1822;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .primary-button:hover {
+  border: 1px solid #FF4655;
+  color: white;
+  background-position: 40%;
+ }
+ 
+ .primary-button:before {
+  content: "";
+  position: absolute;
+  background-color: #0E1822;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -1px;
+  left: -1px;
+  transition: background-color 0.15s ease-in-out;
+ }
+ 
+ .primary-button:hover:before {
+  background-color: white;
+ }
+ 
+ .primary-button:hover:after {
+  background-color: white;
+ }
+ 
+ .primary-button:after {
+  content: "";
+  position: absolute;
+  background-color: #FF4655;
+  width: 0.3rem;
+  height: 0.3rem;
+  bottom: -1px;
+  right: -1px;
+  transition: background-color 0.15s ease-in-out;
+ }
+ 
+
+.menu-item img{
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.menu-item .content{
+  width: 100%;
+}
+
+.menu-item .intro{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.menu-item .intro h3{
+  color: var(--yellow);
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.menu-item .intro .price{
+  font-size: 3rem;
+  color: var(--black);
+}
+
+.menu-item .text p{
+  color: var(--grey);
+  font-size: 1.6rem;
+}
+.menu-item.tou{
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.menu-item .text{
+  color: var(--black);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+/*--------------------- 7- Menu Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 8- Gallery Area CSS (Start) ---------------------*/
+.gallery-container .controls{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.gallery-container .controls .button{
+  display: inline-block;
+  font-size: 2rem;
+  border: 1.5px solid transparent;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.7rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.gallery-container .controls .button.active,
+.gallery-container .controls .button:hover{
+  background-color: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+}
+.gallery-container .box-container{
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.gallery-item{
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
+          border-radius: 1rem;
+}
+
+.gallery-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.gallery-item .view{
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.gallery-item .view a{
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.gallery-item:hover .view{
+  top: 0;
+}
+
+.gallery-item .content{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0rem;
+  left: 0rem;
+  padding: 1rem;
+}
+
+.gallery-item .content h4{
+  color: var(--yellow);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.gallery-item .content p{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/*--------------------- 8- Gallery Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 9- team Area CSS (Start) ---------------------*/
+.team .box-container{
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.team .team-item{
+  background-color: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+          border-radius: 1rem;
+}
+
+.team .team-item .image{
+  height: 35rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.team .team-item .image::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--black);
+  opacity: 0.8;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  transition-delay: 0.25s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.team .team-item .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team .team-item .icons{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.team .team-item:hover .icons{
+  bottom: 0%;
+}
+
+.team .team-item .icons a{
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.team .team-item .icons a:hover{
+  color: var(--white);
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.team .team-item .content{
+  padding: 2rem;
+  text-align: center;
+}
+
+.team .team-item .content h3{
+  font-size: 2.2rem;
+}
+
+.team .team-item .content p{
+  color: var(--yellow);
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+
+.team .team-item .image:hover::before{
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.team .team-item .image:hover .icons{
+  opacity: 1;
+  transition-delay: 0.3s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/*--------------------- 9- team Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 10- Testimonials Area CSS (Start) ---------------------*/
+.testimonial-slider{
+  position: relative;
+  padding: 2rem 0 4rem 0;
+  overflow: hidden;
+}
+
+.testimonial-slider .swiper-pagination-bullet{
+  background: #666;
+}
+
+.testimonial-slider .swiper-pagination-bullet-active{
+  background: var(--yellow);
+}
+
+.testimonial .testi-item{
+  padding: 1rem 2rem;
+  background: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+}
+
+.testimonial .testi-item:hover{
+  -webkit-box-shadow: var(--box-shadow-hover);
+          box-shadow: var(--box-shadow-hover);
+}
+
+.testimonial .testi-item .intro{
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonial .testi-item .image {
+  height: 12rem;
+  width: 12rem;
+}
+
+.testimonial .testi-item .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 0.3rem solid var(--yellow);
+  padding: 0.3rem;
+}
+
+.testimonial .testi-item .intro .content h3 {
+  padding-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+.testimonial .testi-item .intro .content h5 {
+  color: var(--yellow);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.testimonial .testi-item .rating{
+  margin: 1rem 0;
+}
+
+.testimonial .testi-item .rating i {
+  color: var(--yellow);
+  font-size: 1.8rem;
+}
+
+.testimonial .testi-item p{
+  color: var(--grey);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 1rem 0;
+}
+
+/*--------------------- 10- Testimonials Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 11- Blog Area CSS (Start) ---------------------*/
+.blog .box-container{
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  gap: 2rem;
+}
+
+.blog-item{
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.blog-item .title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--white);
+  background-color: var(--black);
+  opacity: 0.8;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.blog-item .image{
+  height: 25rem;
+}
+
+.blog-item .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-item .content{
+  padding: 2rem 1rem;
+}
+
+.blog-item .content .main-heading{
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+.blog-item .content p{
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+/*--------------------- 11- Blog Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 12- Contact Area CSS (Start) ---------------------*/
+
+
+.contact .box-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+}
+
+.contact iframe{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+      flex: 1 1 40rem;
+      border-radius: 1rem;
+}
+
+.contact .form{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+      flex: 1 1 40rem;
+  background-color: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.contact .form h2{
+  font-size: 2.5rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.contact .form .box {
+  width: 100%;
+  background: transparent;
+  border: 0.1rem solid var(--black);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  text-transform: none;
+  border-radius: 1rem;
+}
+
+.contact .form .box::placeholder {
+  color: var(--grey);
+  text-transform: capitalize;
+}
+
+.contact .form .box:focus {
+  background: transparent;
+}
+
+.contact .form textarea {
+  height: 18rem;
+  resize: none;
+}
+
+.contact .alert{
+  font-size: 2rem;
+  color: var(--yellow);
+  padding-left: 1rem;
+}
+
+/*--------------------- 12- Contact Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 13- Booking Area CSS (Start) ---------------------*/
+.book-table{
+  position: fixed;
+  top: -150%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  background-color: #00000067;
+  z-index: 10000;
+  border-radius: 1rem;
+}
+
+.book-table.active{
+  top: 0;
+}
+
+.book-table #close-booking-form{
+  position: absolute;
+  top:1rem; right:1rem;
+  font-size: 5rem;
+  color:var(--yellow);
+  cursor: pointer;
+}
+
+.book-table .form{
+  width: 60rem;
+  background-color: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  padding: 2rem;
+  text-align: center;
+  max-height: 90%;
+  overflow-y: auto;
+  border-radius: 1rem;
+}
+
+.book-table .form::-webkit-scrollbar{
+  width: 0.8rem;
+}
+
+.book-table .form::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background-color: #0a0903;
+}
+
+.book-table .form::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.book-table .form h2{
+  font-size: 2.5rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.book-table .form .box {
+  width: 100%;
+  background: transparent;
+  border: 0.1rem solid var(--black);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  text-transform: none;
+  border-radius: 1rem;
+}
+
+.book-table .form .input-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.book-table .form .input-box .box{
+  width: 49%;
+}
+
+.book-table .form .box::placeholder {
+  color: var(--grey);
+  text-transform: capitalize;
+}
+
+.book-table .form .box:focus {
+  background: transparent;
+}
+
+.book-table .form textarea {
+  height: 18rem;
+  resize: none;
+}
+
+/*--------------------- 13- Booking Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 14- Footer Area CSS (Start) ---------------------*/
+.footer {
+  background-color: var(--black);
+  padding: 0 2rem;
+}
+
+.footer .box-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.footer-item{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33rem;
+      flex: 1 1 33rem;
+}
+
+.footer-item h2{
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-item p{
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+
+.footer-item .info p{
+  display: block;
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.footer-item .info i{
+  color: var(--yellow);
+    padding-right: 1rem;
+}
+
+.footer-item .info .gmail{
+  text-transform: none;
+}
+
+.footer-item .social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-item .social a{
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.footer-item .social a i{
+    color: var(--yellow);
+    font-size: 2rem;
+  
+}
+
+.footer-item .social a:hover{
+    background-color: var(--yellow);
+    border-radius: 1rem;
+}
+
+.footer-item .social a:hover i{
+    color: #fff;
+    
+}
+
+.footer-item .timing h3{
+  color: var(--yellow);
+  font-size: 2rem;
+}
+
+.footer-item .timing p{
+  margin: 0.5rem 0;
+}
+
+.footer-item .links a,
+.footer-item .iinks p{
+  display: block;
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.footer-item .links a i,
+.footer-item .links p i{
+    padding-right: 0.5rem;
+    color: var(--yellow);
+}
+
+.footer-item .links a:hover i{
+  padding-right: 1.5rem;
+}
+
+.footer .content{
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 0.2rem solid #fff;
+}
+
+.footer .content p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer .content p span{
+    color: var(--yellow);
+}
+
+/*--------------------- 14- Footer Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 15- Scroll-Top (Start) ---------------------*/
+.scroll-top{
+  position: fixed;
+  bottom: 1rem;
+  right:1rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  font-weight:lighter;
+  color: var(--yellow);
+  background: #fff;
+  border-radius: 50%;
+  border: 0.2rem solid var(--yellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 999;
+}
+
+.scroll-top:hover{
+  background: var(--yellow);
+  color:#fff;
+}
+
+/*--------------------- 15- Scroll-Top (End) ---------------------*/
